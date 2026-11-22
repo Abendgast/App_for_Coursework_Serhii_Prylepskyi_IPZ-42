@@ -1,0 +1,1 @@
+"""AutoTestReport Hub application package."""
