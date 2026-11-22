@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="billing" tests="3" failures="1" skipped="1" time="0.80">
+    <testcase classname="billing.InvoiceTests" name="test_create_invoice" time="0.25" />
+    <testcase classname="billing.InvoiceTests" name="test_refund" time="0.50">
+      <failure message="expected 200, got 500">AssertionError</failure>
+    </testcase>
+    <testcase classname="billing.InvoiceTests" name="test_legacy_flow" time="0.05">
+      <skipped message="not configured" />
+    </testcase>
+  </testsuite>
+</testsuites>

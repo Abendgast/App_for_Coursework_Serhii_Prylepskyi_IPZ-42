@@ -1,0 +1,26 @@
+{
+  "build_number": 42,
+  "branch": "feature/payments",
+  "suites": [
+    {
+      "name": "checkout",
+      "tests": [
+        {
+          "name": "test_checkout",
+          "status": "passed",
+          "duration_seconds": 0.1
+        },
+        {
+          "name": "test_declined_card",
+          "status": "failed",
+          "duration_seconds": 0.2,
+          "error_message": "Expected a decline response"
+        },
+        {
+          "name": "test_legacy_payment",
+          "status": "skipped"
+        }
+      ]
+    }
+  ]
+}
